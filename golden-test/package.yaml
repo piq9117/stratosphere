@@ -1,0 +1,29 @@
+_common/package: !include "../common/package.yaml"
+
+name:         golden-test
+synopsis:     EDSL for AWS CloudFormation - Golden Test
+description:  EDSL for AWS CloudFormation - Golden Test
+category:     AWS, Cloud
+maintainer:   Markus Schirp
+stability:    experimental
+license:      MIT
+github:       mbj/stratosphere
+
+<<: *defaults
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - base
+      - stratosphere
+      - stratosphere-ec2
+      - stratosphere-autoscaling
+      - hspec
+      - hspec-discover
+      - hspec-golden
+      - text
+      - filepath
+      - bytestring

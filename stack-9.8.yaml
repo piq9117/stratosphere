@@ -442,6 +442,7 @@ flags:
 packages:
 - .
 - examples
+- golden-test
 - generator
 - services/accessanalyzer
 - services/acmpca
