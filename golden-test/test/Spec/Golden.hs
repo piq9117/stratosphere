@@ -2,18 +2,18 @@ module Spec.Golden (runGoldenTest) where
 
 import Data.ByteString.Lazy
   ( ByteString,
+    readFile,
     writeFile,
-    readFile
   )
-import Prelude hiding (readFile, writeFile)
 import System.FilePath ((</>))
 import Test.Hspec.Golden (Golden (..))
+import Prelude hiding (readFile, writeFile)
 
-runGoldenTest :: 
-  String -> 
-  ByteString -> 
+runGoldenTest ::
+  String ->
+  ByteString ->
   Golden ByteString
-runGoldenTest name actualOutput = 
+runGoldenTest name actualOutput =
   Golden
     { output = actualOutput,
       encodePretty = show,

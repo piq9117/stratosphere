@@ -25,6 +25,10 @@ tests:
       - text
       - filepath
       - bytestring
+      - aeson
       - stratosphere-ec2
       - stratosphere-autoscaling
       - stratosphere-rds
+      - stratosphere-lambda
+      - stratosphere-s3
+      - stratosphere-iam
