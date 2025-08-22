@@ -19,11 +19,12 @@ tests:
     dependencies:
       - base
       - stratosphere
-      - stratosphere-ec2
-      - stratosphere-autoscaling
       - hspec
       - hspec-discover
       - hspec-golden
       - text
       - filepath
       - bytestring
+      - stratosphere-ec2
+      - stratosphere-autoscaling
+      - stratosphere-rds
